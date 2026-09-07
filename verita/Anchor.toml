@@ -1,0 +1,22 @@
+skip_local_validator = true
+
+[toolchain]
+
+[features]
+resolution = true
+skip-lint = false
+
+[programs.localnet]
+verita = "2BjVNW3YL7LigwWvRCWgYrxqZjWYwp8RJmLt2S1k9e5c"
+
+[programs.devnet]
+verita = "2BjVNW3YL7LigwWvRCWgYrxqZjWYwp8RJmLt2S1k9e5c"
+
+[provider]
+cluster = "devnet"
+wallet = "~/.config/solana/id.json"
+
+[scripts]
+test = "cargo test"
+
+[hooks]
